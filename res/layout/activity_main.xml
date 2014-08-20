@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btn1111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="btn1111Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn1111"
+        android:layout_alignParentLeft="true"
+        android:onClick="btn1111Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn111"
+        android:layout_alignParentLeft="true"
+        android:onClick="btn1111Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btn111"
+        android:background="@drawable/brick_shape"
+        android:text="Brick" />
+
+    <Button
+        android:id="@+id/btn2222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn1111"
+        android:onClick="btn2222Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn11"
+        android:layout_alignLeft="@+id/btn2222"
+        android:layout_alignRight="@+id/btn2222"
+        android:background="@drawable/brick_shape"
+        android:text="Brick" />
+
+    <Button
+        android:id="@+id/btn22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn11"
+        android:layout_alignBottom="@+id/btn11"
+        android:layout_toRightOf="@+id/btn111"
+        android:onClick="btn2222Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn2222"
+        android:layout_toRightOf="@+id/btn111"
+        android:onClick="btn2222Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn3333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn3"
+        android:layout_alignParentBottom="true"
+        android:onClick="btn3333Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn3"
+        android:layout_below="@+id/btn3"
+        android:onClick="btn3333Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn33"
+        android:layout_alignBottom="@+id/btn33"
+        android:layout_toRightOf="@+id/btn33"
+        android:onClick="btn4444Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn33"
+        android:layout_below="@+id/btn33"
+        android:onClick="btn3333Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn444"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn333"
+        android:layout_alignBottom="@+id/btn333"
+        android:layout_toRightOf="@+id/btn3333"
+        android:onClick="btn4444Clicked"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/btn4444"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn333"
+        android:layout_toRightOf="@+id/btn3333"
+        android:onClick="btn4444Clicked"
+        android:text="Hit" />
+
+    <TextView
+        android:id="@+id/tvSwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|fill_vertical|center_horizontal"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#AB1244"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn44"
+        android:layout_alignLeft="@+id/btn44"
+        android:layout_alignRight="@+id/btn44"
+        android:background="@drawable/brick_shape"
+        android:text="Brick" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_toRightOf="@+id/btn2"
+        android:background="@drawable/brick_shape"
+        android:text="Brick" />
+
+</RelativeLayout>
